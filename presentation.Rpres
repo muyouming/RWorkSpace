@@ -1,0 +1,14 @@
+presentation
+========================================================
+author: 
+date: 
+
+First Slide
+========================================================
+
+```{r, echo=FALSE}
+
+source('Incident Analysis.R')
+ggplot(alleffort,aes(x=WEEK_START_DAY,y=Percentage))+geom_bar(stat='identity')+geom_text(aes(label=AVERAGE_EFFORT))+labs(x="Date",y="Effort",title = "Effort Percentage")
+```
+
